@@ -8,14 +8,14 @@
 }
 
 .hamburger {
-    font-size: 2.5rem;
-    color: rgb(156, 156, 202);
+  font-size: 2.5rem;
+  color: rgb(156, 156, 202);
 }
 
 .navbar__profile {
-    width: 50px;
-    position: absolute;
-    right: 5px;
+  width: 50px;
+  position: absolute;
+  right: 5px;
 }
 
 .navbar__search {
@@ -28,5 +28,4 @@
 
 .navbar__profile_icon {
   border-radius: 50%;
-
 }

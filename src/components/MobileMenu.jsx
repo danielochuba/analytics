@@ -1,30 +1,53 @@
 import React from 'react'
-import style from '../assets/stylesheets/navbar.module.css';
+import style from '../assets/stylesheets/mobile-menu.module.css';
 import closeButton from '../assets/img/close-btn.png';
+import dashboardIcon from '../assets/img/category.png';
+import metricsIcon from '../assets/img/trend.png';
+import profileIcon from '../assets/img/profile.png';
+import contributionIcon from '../assets/img/box.png';
+import discountIcon from '../assets/img/discount.png';
+import infoIcon from '../assets/img/info-circle.png';
+import logo from '../assets/img/flash_logo.png';
+
 
 function MobileMenu({setIsMenuOpen}) {
   return (
-        <div className={style.menu_container}> 
-          
-          <ul className={style.mobile_menu}>
+        <>    
+          <ul className={`${style.mobile_menu} ${style.slideIn}`}>
+          <img src={logo} alt='My Company' className={style.mobile_menu__logo} />
           <img src={closeButton} onClick={() => setIsMenuOpen(false)} className={style.close_button} />
-            <li>
-              <a className={style.menu_item} href="#work">
-                Portfolio
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={dashboardIcon} className={style.menu__link_icon} alt='Dashboard' /> Dashboard
               </a>
             </li>
-            <li>
-              <a className={style.menu_item} href="#about">
-                About
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={metricsIcon} alt='Trends' className={style.menu__link_icon} /> Trends
               </a>
             </li>
-            <li>
-              <a className={style.menu_item} href="#contact">
-                Contacts
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={profileIcon} alt='Profile' className={style.menu__link_icon} /> Profile
+              </a>
+            </li>
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={contributionIcon} alt='Contributions' className={style.menu__link_icon} /> Contributions
+              </a>
+            </li>
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={discountIcon} alt='Discounts' className={style.menu__link_icon} /> Discounts
+              </a>
+            </li>
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center' href="#work">
+              <img src={infoIcon} alt='Info' className={style.menu__link_icon} /> Info
               </a>
             </li>
           </ul>
-        </div>
+        </>
       )}
 
 export default MobileMenu

@@ -47,6 +47,13 @@
   margin: 0.5rem;
 }
 
+.menu__theme_icon {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 19%;
+  bottom: 0;
+}
+
 .close_button {
   position: absolute;
   width: 1.2em;

@@ -8,6 +8,7 @@ import contributionIcon from '../assets/img/box.png';
 import discountIcon from '../assets/img/discount.png';
 import infoIcon from '../assets/img/info-circle.png';
 import logo from '../assets/img/flash_logo.png';
+import themeIcon from '../assets/img/theme.png';
 
 
 function MobileMenu({setIsMenuOpen}) {
@@ -44,6 +45,11 @@ function MobileMenu({setIsMenuOpen}) {
             <li className={style.menu_item}>
               <a className='text-gray-400 flex items-center' href="#work">
               <img src={infoIcon} alt='Info' className={style.menu__link_icon} /> Info
+              </a>
+            </li>
+            <li className={style.menu_item}>
+              <a className='text-gray-400 flex items-center'>
+              <img src={themeIcon} alt='Info' className={`${style.menu__theme_icon}`} /> 
               </a>
             </li>
           </ul>

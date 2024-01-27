@@ -1,0 +1,47 @@
+.logo {
+  width: 2.4rem;
+}
+
+.metric_card__container {
+  display: grid;
+  grid-template: 160px 150px / auto auto;
+  gap: 6px;
+  padding: 10px;
+}
+
+.metric_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  border: 1px solid #edf2f7;
+  border-radius: 10px;
+}
+
+.metric_card__chart {
+  height: 32px;
+  width: 72px;
+  padding: 0.1rem;
+}
+
+.metric_card__unit {
+  font-size: 1.5rem;
+  color: #3a3f51;
+  font-weight: 600;
+}
+
+.metric_card__description {
+  color: #898989;
+}
+
+.metric_card__metric {
+  font-size: small;
+}
+
+.metric_card__progress {
+  background: #ed534e2c;
+  border-radius: 10px;
+  padding-right: 4px;
+  color: #ed544e;
+}
